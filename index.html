@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ruerob</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta property="og:title" content="ruerob">
+  <meta property="og:type" content="Homepage">
+  <meta property="og:url" content="www.ruerob.com">
+  <meta property="og:image" content="img/logo.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<svg width="0" height="0">
+  <symbol id="fa-android" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55"/></symbol>
+  <symbol id="fa-bicycle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M512.509 192.001c-16.373-.064-32.03 2.955-46.436 8.495l-77.68-125.153A24 24 0 0 0 368.001 64h-64c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h50.649l14.896 24H256.002v-16c0-8.837-7.163-16-16-16h-87.459c-13.441 0-24.777 10.999-24.536 24.437.232 13.044 10.876 23.563 23.995 23.563h48.726l-29.417 47.52c-13.433-4.83-27.904-7.483-42.992-7.52C58.094 191.83.412 249.012.002 319.236-.413 390.279 57.055 448 128.002 448c59.642 0 109.758-40.793 123.967-96h52.033a24 24 0 0 0 20.406-11.367L410.37 201.77l14.938 24.067c-25.455 23.448-41.385 57.081-41.307 94.437.145 68.833 57.899 127.051 126.729 127.719 70.606.685 128.181-55.803 129.255-125.996 1.086-70.941-56.526-129.72-127.476-129.996zM186.75 265.772c9.727 10.529 16.673 23.661 19.642 38.228h-43.306l23.664-38.228zM128.002 400c-44.112 0-80-35.888-80-80s35.888-80 80-80c5.869 0 11.586.653 17.099 1.859l-45.505 73.509C89.715 331.327 101.213 352 120.002 352h81.3c-12.37 28.225-40.562 48-73.3 48zm162.63-96h-35.624c-3.96-31.756-19.556-59.894-42.383-80.026L237.371 184h127.547l-74.286 120zm217.057 95.886c-41.036-2.165-74.049-35.692-75.627-76.755-.812-21.121 6.633-40.518 19.335-55.263l44.433 71.586c4.66 7.508 14.524 9.816 22.032 5.156l13.594-8.437c7.508-4.66 9.817-14.524 5.156-22.032l-44.468-71.643a79.901 79.901 0 0 1 19.858-2.497c44.112 0 80 35.888 80 80-.001 45.54-38.252 82.316-84.313 79.885z"/></symbol>
+  <symbol id="fa-dice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M592 192H473.26c12.69 29.59 7.12 65.2-17 89.32L320 417.58V464c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48V240c0-26.51-21.49-48-48-48zM480 376c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm-46.37-186.7L258.7 14.37c-19.16-19.16-50.23-19.16-69.39 0L14.37 189.3c-19.16 19.16-19.16 50.23 0 69.39L189.3 433.63c19.16 19.16 50.23 19.16 69.39 0L433.63 258.7c19.16-19.17 19.16-50.24 0-69.4zM96 248c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm128 128c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm0-128c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm0-128c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm128 128c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"/></symbol>
+  <symbol id="fa-envelope" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></symbol>
+  <symbol id="fa-external-link-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"/></symbol>
+  <symbol id="fa-headphones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 32C114.52 32 0 146.496 0 288v48a32 32 0 0 0 17.689 28.622l14.383 7.191C34.083 431.903 83.421 480 144 480h24c13.255 0 24-10.745 24-24V280c0-13.255-10.745-24-24-24h-24c-31.342 0-59.671 12.879-80 33.627V288c0-105.869 86.131-192 192-192s192 86.131 192 192v1.627C427.671 268.879 399.342 256 368 256h-24c-13.255 0-24 10.745-24 24v176c0 13.255 10.745 24 24 24h24c60.579 0 109.917-48.098 111.928-108.187l14.382-7.191A32 32 0 0 0 512 336v-48c0-141.479-114.496-256-256-256z"/></symbol>
+  <symbol id="fa-html5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></symbol>
+  <symbol id="fa-itch-io" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M71.92 34.77C50.2 47.67 7.4 96.84 7 109.73v21.34c0 27.06 25.29 50.84 48.25 50.84 27.57 0 50.54-22.85 50.54-50 0 27.12 22.18 50 49.76 50s49-22.85 49-50c0 27.12 23.59 50 51.16 50h.5c27.57 0 51.16-22.85 51.16-50 0 27.12 21.47 50 49 50s49.76-22.85 49.76-50c0 27.12 23 50 50.54 50 23 0 48.25-23.78 48.25-50.84v-21.34c-.4-12.9-43.2-62.07-64.92-75C372.56 32.4 325.76 32 256 32S91.14 33.1 71.92 34.77zm132.32 134.39c-22 38.4-77.9 38.71-99.85.25-13.17 23.14-43.17 32.07-56 27.66-3.87 40.15-13.67 237.13 17.73 269.15 80 18.67 302.08 18.12 379.76 0 31.65-32.27 21.32-232 17.75-269.15-12.92 4.44-42.88-4.6-56-27.66-22 38.52-77.85 38.1-99.85-.24-7.1 12.49-23.05 28.94-51.76 28.94a57.54 57.54 0 0 1-51.75-28.94zm-41.58 53.77c16.47 0 31.09 0 49.22 19.78a436.91 436.91 0 0 1 88.18 0C318.22 223 332.85 223 349.31 223c52.33 0 65.22 77.53 83.87 144.45 17.26 62.15-5.52 63.67-33.95 63.73-42.15-1.57-65.49-32.18-65.49-62.79-39.25 6.43-101.93 8.79-155.55 0 0 30.61-23.34 61.22-65.49 62.79-28.42-.06-51.2-1.58-33.94-63.73 18.67-67 31.56-144.45 83.88-144.45zM256 270.79s-44.38 40.77-52.35 55.21l29-1.17v25.32c0 1.55 21.34.16 23.33.16 11.65.54 23.31 1 23.31-.16v-25.28l29 1.17c-8-14.48-52.35-55.24-52.35-55.24z"/></symbol>
+  <symbol id="fa-microchip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M416 48v416c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V48c0-26.51 21.49-48 48-48h224c26.51 0 48 21.49 48 48zm96 58v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42V88h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zM30 376h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6z"/></symbol>
+  <symbol id="fa-scroll" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M48 0C21.53 0 0 21.53 0 48v64c0 8.84 7.16 16 16 16h80V48C96 21.53 74.47 0 48 0zm208 412.57V352h288V96c0-52.94-43.06-96-96-96H111.59C121.74 13.41 128 29.92 128 48v368c0 38.87 34.65 69.65 74.75 63.12C234.22 474 256 444.46 256 412.57zM288 384v32c0 52.93-43.06 96-96 96h336c61.86 0 112-50.14 112-112 0-8.84-7.16-16-16-16H288z"/></symbol>
+  <symbol id="fa-th" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></symbol>
+  <symbol id="fa-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></symbol>
+  <symbol id="fa-xing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M162.7 210c-1.8 3.3-25.2 44.4-70.1 123.5-4.9 8.3-10.8 12.5-17.7 12.5H9.8c-7.7 0-12.1-7.5-8.5-14.4l69-121.3c.2 0 .2-.1 0-.3l-43.9-75.6c-4.3-7.8.3-14.1 8.5-14.1H100c7.3 0 13.3 4.1 18 12.2l44.7 77.5zM382.6 46.1l-144 253v.3L330.2 466c3.9 7.1.2 14.1-8.5 14.1h-65.2c-7.6 0-13.6-4-18-12.2l-92.4-168.5c3.3-5.8 51.5-90.8 144.8-255.2 4.6-8.1 10.4-12.2 17.5-12.2h65.7c8 0 12.3 6.7 8.5 14.1z"/></symbol>
+</svg>
+
+<!-- Header section -->
+<div class="container-fluid header shadow-sm">
+  <header>
+
+    <div class="hamburger">
+
+    </div>
+
+    <div class="links position-absolute">
+      <H5>
+        <a href="https://www.xing.com/profile/Robert_Ruediger4/cv"><svg class="fa"><use xlink:href="#fa-xing"></use></svg></a>
+        <a href="https://gamejolt.com/@ruerob"><img class="fa" src="img/gamejolt.png" alt="GameJolt link" style="height:18px; width: 18px; display: inline;"></a>
+        <a href="https://ruerob.itch.io/"><svg class="fa"><use xlink:href="#fa-itch-io"></use></svg></a>
+        <a href="mailto:support_ruerob@t-online.de"><svg class="fa"><use xlink:href="#fa-envelope"></use></svg></a>
+      </H5>
+    </div>
+
+    <div class="logo">
+      <a href="/index.html">
+        <img class="lazy-loading" alt="ruerob logo" data-src="img/logo.png"/>
+        <div style="display: flex; flex-direction: column">
+          <span class="title">&nbsp;Robert&nbsp;Rüdiger</span>
+          <p class="subtitle">- Programmer, Gamedev, Pixel artist, Writer, Musician, good Listener, Me<br></p>
+        </div>
+      </a>
+    </div>
+
+  </header>
+</div>
+
+<div class="container-fluid">
+  <div class="container">
+    <div class="content-shadow"></div>
+  </div>
+</div>
+
+
+<!-- Intro -->
+
+<div class="container-fluid intro">
+  <div class="darken"></div>
+
+  <div class="container">
+    <section>
+      <div class="card my-5 mx-auto">
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <img class="img-fluid lazy-loading" data-src="img/Morning.jpg" alt="My morning face surrounded by hair!">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h1 class="card-title">Good morning there and welcome!</h1>
+              <p class="card-text">This is me, Robert Rüdiger, and on this page you can take a look at my interests. Haha!
+                I hope you have as much fun looking through them as I have doing them.<br>
+                <small class="text-muted">Have a nice and beautiful day everyone!</small>
+              </p>
+
+              <p class="pt-2 font-weight-bold">SOME HAPPY LITTLE ACCIDENTS</p>
+              <p>
+                <a href="#games"><u>Games</u> I've build. <svg class="fa"><use xlink:href="#fa-dice"></use></svg></a><br>
+                <a href="#stories"><u>Short stories</u> I've written (in German). <svg class="fa"><use xlink:href="#fa-scroll"></use></svg></a><br>
+                <a href="#music">Some <u>music</u> I've composed. <svg class="fa"><use xlink:href="#fa-headphones"></use></svg></a><br>
+                <a href="#pixel"><u>Pixelart</u> I've drawn. <svg class="fa"><use xlink:href="#fa-th"></use></svg></a><br>
+                <!-- a href="#">My small <u>tech blog</u> I've created. <i class="fas fa-microchip"></i></a><br -->
+                <a href="http://robert-radelt.de">A link to my <u>bicycle travel blog</u>. (again in German.) <svg class="fa"><use xlink:href="#fa-bicycle"></use></svg></a><br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+
+<!-- GAMES -->
+
+<div class="container-fluid games">
+  <div class="darken"></div>
+
+  <div class="container">
+    <section>
+      <a id="games"></a>
+      <h2>GAMES <svg class="fa"><use xlink:href="#fa-dice"></use></svg></h2>
+
+      <div class="row py-5">
+        <div class="col-lg-4">
+          <div class="content-border">
+            <div class="content-card">
+              <img src="img/dotty.png" alt="Dotty Logo">
+              <div class="content-description">
+                <h3 class="title">Dotty <svg class="fa"><use xlink:href="#fa-android"></use></svg></h3>
+                <p class="content-description-text">
+                  It's as easy and fun as popping bubbles! Hahaha! You let them grow and get a lot of points for big bursts of joy. Try it out! On Android!
+                </p>
+                <a href="https://play.google.com/store/apps/details?id=com.ruerob.dotty" class="stretched-link">
+                  It's in the Google Play Store! <svg class="fa"><use xlink:href="#fa-external-link-alt"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="content-border">
+            <div class="content-card">
+              <img class="lazy-loading" data-src="img/pt.png" alt="Parking Ticket Logo">
+              <div class="content-description">
+                <h3 class="title">Parking Ticket C64</h3>
+                <p class="content-description-text">
+                  This downgrade of my game Parking Ticket was created for the craptastic 2020 C64 game compo where you had to write a game in under 4 KB. It's made in assembler and it's crap! But it was fun to write! Haha!
+                </p>
+                <a href="https://ruerob.itch.io/parking-ticket-c64" class="stretched-link">
+                  Home on Itch.io! <svg class="fa"><use xlink:href="#fa-external-link-alt"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="content-border">
+            <div class="content-card">
+              <img class="lazy-loading" data-src="img/wtp.png" alt="Walk the Plank Logo">
+              <div class="content-description">
+                <h3 class="title">Walk the Plank <svg class="fa"><use xlink:href="#fa-html5"></use></svg></h3>
+                <p class="content-description-text">
+                  Inspired by old olympic sport games, I've build this little HTML5 game. Be a pirate captain! Walk the plank in a stylish way and survive an epic battle!
+                </p>
+                <a href="https://gamejolt.com/games/walk-the-plank/34487" class="stretched-link">
+                  Craftet for Gamejolt.com! <svg class="fa"><use xlink:href="#fa-external-link-alt"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+
+<!-- Short Stories -->
+
+<div class="container-fluid stories">
+  <div class="darken"></div>
+
+  <div class="container">
+    <section>
+      <a id="stories"></a>
+      <h2>SHORT STORIES <svg class="fa"><use xlink:href="#fa-scroll"></use></svg></h2>
+
+      <div class="row py-5">
+        <div class="col">
+          <div class="content-border">
+            <div class="content-card">
+              <div class="content-description">
+                <h3 class="title">Helga der Hirschkäfer</h3>
+                <p class="text-preview">
+                  <br>
+                  Helga war ein Hirschkäfer und sie hatte eine riesige Krone auf dem Kopf! Sie war die Königin der Hirschkäfer und das aus einem guten Grund.<br>
+                  Als Helga noch klein war, hatte sie noch keine Krone und sie war auch keine Prinzessin. Doch alles in ihrem Leben fand den richtigen Weg. Ganz von allein. Auch wenn es am Anfang nicht so aussah.<br>
+                  <br>
+                  Kurz nachdem sie aus ihrem Ei geschlüpft war, als stattliche kleine Larve, war sie erst mal ganz allein. Kein anderes Ei war weit und breit zu sehen und auch keine anderen Larven. Das war ein wenig traurig, aber sie war tapfer und mampfte sich durch den köstlichen morschen Baum, in den sie gelegt worden war.<br>
+
+                  <input type="checkbox" value="false" class="read-more-box" id="read-more">
+                  <label class="read-more-label" for="read-more"><br>Ich würde gern weiterlesen!</label>
+                  <span class="read-more">
+                      <br>
+                      Nachdem sich ihr erstes Lebensjahr als kleine Larve dem Ende näherte und sie auch schon gut gefuttert hatte, traute sie sich, was ungewöhnlich ist für Hirschkäferlarven, an die Oberfläche des Baumes. Sie schaute nach oben und sah ein großes fliegendes Wesen am Himmel. Sie rief so laut sie konnte, damit das Wesen sie hören konnte. Und ja, es bemerkte sie und landete mit einem sehr ängstlichen Blick in den Augen neben ihr.<br>
+                      <br>
+                      "Mach, dass du schnell wieder runter zu den anderen Larven kommst! Hat dir keiner gesagt, dass du hier oben nicht sicher bist!?" Hörte sie das Wesen sagen. Da antwortete sie: "Aber hier unten ist sonst niemand ... Ich war ein Jahr lang ganz allein! Wer bist du überhaupt?" "Ich bin ein Hirschkäfer!", sagte das Wesen, "Ich war auch einmal eine kleine Larve, wie du! Moment. Ich hab eine Idee! Du siehst recht stattlich und knuffig aus! Obwohl das hier ein Baum ist, der nicht so lecker aussieht. Aber ich trommle mal ein paar Weibchen zusammen, dass du hier ein wenig Gesellschaft bekommst. Passt du dann auf unsere Kleinen auf?"<br>
+                      <br>
+                      Helga war begeistert! Endlich war sie nicht mehr allein. Sie konnte ihr Glück kaum fassen. Schon ein paar Wochen später wurde im gesamten Stamm herzlich gemampft und überall hörte man das Knabbern und Schmatzen der kleinen Larven. Helga hatte von den Mamis ordentlich was gelernt. So vieles wusste sie bisher noch nicht. Sie hatte gelernt, dass sie alle im Baum bleiben sollen, damit sie nicht als Delikatesse auf den Tellern der Menschen landen. Und auch wenn wer an das Holz klopft, sollen sie nicht hochkrabbeln und dem Gast die Türe öffnen, weil der sie sonst aus dem Stamm zieht und in seinem federigen Körper verschwinden lässt. Zu tief nach unten budeln dürfen sie auch nicht, weil sie sonst den hungrigen wuscheligen Schnuffler anlocken.<br>
+                      <br>
+                      Helga passte gut auf ihre Krabbelgruppe auf. Sie trotzen dem Klopfen und auch gelegentliches Kratzen und Schaben war ihnen egal. Nur einmal war es brenzlig! Als auf einmal nach einem sehr starken Klopfen ein heller Lichtschein in die Gänge der Larven fiel. Der Po von Hubertus hing sogar im Licht! Doch zum Glück konnte Helga ihn rechtzeitig ins sichere Dunkel und tief in den Stamm ziehen, so, dass ihnen nichts passieren konnte. Auch wenn Helga nie diese glatte harte Hacke vergessen wird, die sich gegen das Holz schlug und versuchte, das Loch aufzureißen und nach langem hacken mit einem lauten, enttäuschten, chitinerschütternden Krächzer abzog.<br>
+                      <br>
+                      In den folgenden Jahren versuchte Helga immer wieder zu ihrem Geburtstag Kontakt zu den anderen Hirschkäfern an der Oberfläche aufzunehmen, um vielleicht noch andere Dinge zu lernen, auf die sie achten müssten. Sie machte sich nämlich langsam Sorgen, weil aus ihr immer noch kein Käfer geworden war. Ja, sie wuchs immer weiter, doch hatte sie die Vermutung, dass sie irgendwann so groß wie der Stamm sein würde und trotzdem nie die Oberwelt als fliegender Käfer bereisen können würde. Vielleicht fehlte ihr das Geheimnis. Vielleicht würde sie sich nie verwandeln, weil sie nicht weiß, wie das geht. Vielleicht würde sie dann auch den anderen nicht helfen können, sich zu verwandeln.<br>
+                      <br>
+                      Nach fünf erfolglosen Jahren wurde sie sehr traurig ... Irgendwie konnte sie nichts mehr aufheitern ... Das Holz schmeckte ihr nicht mehr und ihre Krabbelgruppe konnte auch gut allein auf sich aufpassen. Sie fing an, sich von den anderen abzugrenzen und wickelte sich ein. Drei Monate ließ sie sich nicht mehr blicken. Sie dachte viel nach und grübelte und war wie in Watte gepackt. Doch eines Tages kam Hubertus zu ihr. Er war ganz aufgeregt. "Ein Erdbeben!! EIN ERDBEBEN! UNSERE GÄNGE STÜRZEN EIN!!! AAAAHHHHHH!!!!! WER BIST DU!?!?!?"<br>
+                      <br>
+                      Helga spürte, dass etwas anders war. Sie sah an sich herab und bemerkte, dass sie keine Larve mehr war!!! Sie hatte sich verändert! Sie hatte Zangen am Kopf und lange Beine und Flügel und einen Panzer!!! Voller neu entfachter Lebensfreude knuddelte sie den verdutzten Hubertus! Und flog aus dem Baumstamm, um nach dem Rechten zu gucken! Da sah sie, dass es kein Erdbeben war, dass den Stamm zum Einstürzen brachte! Nein! Dort waren Wesen, die auf die Beschreibung der Menschen passten! Schnell flog sie zu einem von ihnen hinüber und zwickte ihm in die Nase, so doll sie konnte! Sie wollte die Menschen vertreiben, die mit ihrem lauten Gepolter und den Flatterbändern und großen Dingsdas und Plattmachern um den Stamm wuselten!<br>
+                      <br>
+                      Der Mensch reagierte ganz seltsam! Alles wurde ruhig! Hatte sie es geschafft? Etwas blitzte und machte sie ganz wuschig im Kopf und die Menschen gingen fort ... Hatte Helga es tatsächlich geschafft? Ein Hirschkäfer gegen eine ganze Menschengruppe!? Sie kehrte zu ihrem Baumstamm zurück und wurde umjubelt empfangen! Alle waren stolz auf Helga! Das hätte sich keiner getraut! Doch irgendwas stimmte nicht ... Irgendwie fühlte sich der Baumstamm seltsam an ... Das Gradeauslaufen viel allen sichtlich schwer und einigen wurde richtig flau im Magen ... Der Boden schien sich unter ihren Füßen zu bewegen ... Nach einiger Zeit gab es einen richtigen Ruck und die kleinen Larven bekamen Angst. Sie stupsten Helga an, damit sie draußen guckt, ob die Luft rein ist. Dort traute sie ihren Augen nicht. Ganz viele Hirschkäfer flogen durch die Lüfte! Alles sah ganz anders aus! Es gab überall Blumen und auch das Gras sah hier viel grüner aus! Die Menschen hatten sie zu den anderen Käfern getragen!<br>
+                      <br>
+                      Alle jubelten und Helgas Geschichte wurde unter den Hirschkäfern umhergetragen! Niemand hätte sich getraut, einen der Riesen zu bekämpfen zum Wohle des Stammes. Dafür erhielt sie ihre Krone! Und sie lebte glücklich bis ans Ende ihrer Tage.<br>
+                    </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-5">
+        <div class="col">
+          <div class="content-border">
+            <div class="content-card">
+              <div class="content-description">
+                <h3 class="title">Das alte Kamuffel</h3>
+                <p class="text-preview">
+                  <br>
+                  Einmal, vor vielen vielen Jahren, da lebte ein Kamel. Es war jung, sprunghaft und immer vergnügt!
+                  Auch heute lebt dieses Kamel noch, nur ist es alt geworden... Sehr alt! Heute kennt man es unter dem Namen altes Kamuffel.<br>
+                  <br>
+                  So zieht es Tag ein Tag aus durch die Wüsten dieser Welt und sucht nach einem Platz, um seine alten Knochen auszuruhen...
+                  Auch sein Fell ist schon von der Sonne gebleicht und muffelig, sein Gang ist schwerfällig, aber es kann nicht anhalten. Ein altes Versprechen hält es am Leben.<br>
+                  <br>
+                  Unser Kamuffel lebte nicht immer allein und durch die Wüste trottend auf unserem Planeten.
+                  Als es jünger war, war es Mitglied einer großen Herde, die zusammen mit den Beduinen, also den Wüstenleuten, die Wüste zu ihrem Lebensraum erklärten! Sie zogen gemeinsam durch die unwirtliche Landschaft und kämpften jeden Tag ums Überleben. Doch sie waren glücklich, denn sie waren frei! Jeder Tag war ein neues Abenteuer und jeder Tag hielt Überraschungen bereit.<br>
+                  <br>
+                  So begab es sich den einen Tag, dass nach monatelanger Hitze ein nicht enden wollender Regenschauer vom Himmel fiel. Das Wasser regnete nicht in Tropfen. Nein. Es waren Strahlen!!
+                  Alles wurde nass und nach einer Weile ging unserem Kamuffel das Wasser bis zu seinen Höckern. Die Beduinen kletterten auf die Kamele, um nicht mit den Wassermassen mitgerissen zu werden.
+                  Und die Kamele waren froh über das zusätzliche Gewicht, um nicht weggespült zu werden.<br>
+
+                  <input type="checkbox" value="false" class="read-more-box" id="read-more-2">
+                  <label class="read-more-label" for="read-more-2"><br>Ich würde gern weiterlesen!</label>
+                  <span class="read-more">
+                      <br>
+                      Weiter stieg das Wasser zum Glück nicht, doch es dauerte noch eine ganze Zeit, bis es im Boden versickert war.<br>
+<br>
+Nach einigen Tagen veränderte sich die Wüste... Überall auf dem Boden begannen Blumen zu blühen. Überall roch es frisch und süß und himmlisch wie im Paradies. Unser Kamuffel freute sich. Jeder Schritt brachte ihm einen neuen Duft in die Nase. Jeder Blickwechsel eine neue Farbe. Das kannte unser Kamuffel nicht. Als die Beduinen sahen, wie glücklich unser Kamuffel war, knüpften sie ihm eine Decke aus den schönsten und am besten riechenden Blumen, die sie finden konnten. Alle freuten sich über das blumige Kamuffel. Jeder wollte am Kamuffel schnuppern und es streicheln. Es wurde zum Symbol des Beduinenstammes erklärt und alle hatten Freude an unserem Kamuffel.<br>
+<br>
+Unser Kamuffel wollte diese Decke nie wieder her geben. Nie legte es sie ab, auch nicht zum Schlafen. Doch leider hielten die Blumen nicht lange... Nach ein paar Tagen schon war die Decke verwelkt und unser Kamuffel wurde traurig. Die Beduinen sahen dies mit Bedauern und versprachen unserem Kamuffel, ihm wieder eine Decke zu knüpfen, wenn es wieder regnen sollte.<br>
+<br>
+Doch viele Jahre gingen ins Land... Unser Kamuffel, dem die verwelkende Decke ins Fell gewachsen war, hatte nie wieder einen Regenschauer gesehen. Es lief nur noch durch die sengende Hitze. Nach und nach starben die Beduinen und die anderen Kamele. Von immer mehr Freunden musste sich unser Kamuffel verabschieden. Bis es fast ganz allein war. Dem letzten Beduinen versprach es durchzuhalten, bis wieder alles blühen würde. Bis es ein allerletztes Mal, als das Symbol der Beduinen mit erhobenem Haupt durch die Wüste stolzieren würde.<br>
+<br>
+Dieses Versprechen hielt unser Kamuffel am Leben. Nun schon 151 Jahre. Kein Wasser kreuzte seinen Weg. Unser Kamuffel bekam Angst. Würde es jemals wieder regnen. Würde es jemals mit seinem Stamm vereint sein.<br>
+<br>
+Da tropfte etwas auf seine Nase. Erst zu klein, um es wirklich zu spüren und dann sah unser Kamuffel die Strahlen des lang ersehnten Nasses. Diesmal schaute nur der Kopf vom Kamuffel noch aus dem Wasser. Doch unser Kamuffel war traurig... Wer sollte ihm jetzt eine Decke machen. Es war ja niemand mehr da. Als das Wasser wieder versickert war und die Blumen wieder zu sprießen begannen, legte sich unser Kamuffel nieder. Es war am Ziel seiner Reise angekommen. Es senkte den Kopf und schnupperte noch ein letztes Mal an einer Blume, bevor es sein Leben aushauchte.<br>
+<br>
+Als sein Geist aufstieg, sah es zu sich herab und erblickte, wie die verwelkte Blumendecke zu blühen begann. Da rollte ihm eine Träne des Glücks aus dem Auge und fiel auf seinen Körper hinab. Die Träne war so groß, dass eine Oase entstand und die Blumen nie wieder verwelkten.
+                    </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+
+<!-- MUSIC -->
+
+<div class="container-fluid music">
+  <div class="darken"></div>
+
+  <div class="container">
+    <section>
+      <a id="music"></a>
+      <h2>MUSIC <svg class="fa"><use xlink:href="#fa-headphones"></use></svg></h2>
+      <div class="row py-5">
+
+        <div class="col-lg-4">
+          <div class="content-border">
+            <div class="content-card">
+              <h3 class="title">Voyager</h3>
+              <audio class="lazy-loading" data-src="audio/Voyager.mp3" controls></audio>
+              <p class="content-description-text">
+                Voyager was my first song made with <a href="http://covertbitops.c64.org/">GoatTracker</a>. Since I used some filters here, it doesn't run on
+                every C64. It was made for a Java game where a space ship comes to earth and helps a caterpillar to
+                transform into a butterfly by saving it from loud noises and hungry enemies.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="content-border">
+            <div class="content-card">
+              <h3 class="title">Parking Ticket</h3>
+              <audio class="lazy-loading" data-src="audio/parking.mp3" controls></audio>
+              <p class="content-description-text">
+                Here you can listen to the original version of the Parking Ticket theme. It was made with <a href="https://milkytracker.org/">MilkyTracker</a>. For the C64
+                game I downgraded it. But this is my favourite version.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="content-border">
+            <div class="content-card">
+              <h3 class="title">Smash That Drums</h3>
+              <audio class="lazy-loading" data-src="audio/Smash.mp3" controls></audio>
+              <p class="content-description-text">
+                One fine day, I was searching for a new software that would help me with making music. So it came
+                that Caustic 3 passed my way and this song was the test if it would fit my needs. I was really happy
+                with it and so I used it on my games. For example you can find music made with Caustic 3 in Dotty and in
+                Walk the Plank.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</div>
+
+
+<!-- ### Pixelart ### -->
+<div class="container-fluid pixel">
+  <div class="darken"></div>
+
+  <div class="container">
+    <section>
+      <a id="pixel"></a>
+      <h2>PIXELART <svg class="fa"><use xlink:href="#fa-th"></use></svg></h2>
+
+      <div class="row py-5">
+
+        <div class="col-lg-4">
+          <div class="content-border">
+            <div class="content-card">
+              <img class="lazy-loading" data-src="img/2021-02-05-lucky.png" alt="Pixel Dailies Theme Lucky Pixelart">
+              <div class="content-description">
+                <h3 class="title">Lucky</h3>
+                <p class="content-description-text">
+                  Thank you pixel dailies for helping me to improve on setting points to a pixel grid to awake feelings in people.
+                  From time to time there are really awesome themes that inspire my imagination and let me think about my life too.
+                  When the theme lucky came up, I remembered the scene in which Eva and WALL-E are holding hands.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="content-border">
+            <div class="content-card">
+              <img class="lazy-loading" data-src="img/ostern.gif" alt="Gif of a prototype">
+              <div class="content-description">
+                <h3 class="title">Prototype</h3>
+                <p class="content-description-text">
+                  One bigger game I've tried to make, was about a rabbit trying to make breakfast for his wife. While
+                  getting a flower for her he was kidnapped and his pregnant wife should then go onto a journey to
+                  rescue him.<br>
+                  The first part that ended with the kidnapping was already done and animated but then a broken hard disk
+                  stopped my motivation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="content-border">
+            <div class="content-card">
+              <img class="lazy-loading" data-src="img/pumpi.png" alt="Screenshot of Pumpi">
+              <div class="content-description">
+                <h3 class="title">Pumpi</h3>
+                <p class="content-description-text">
+                  Pumpi was made for the Ludum Dare game jam. You had to play a little pumpkin demon who escaped the
+                  sweetless hell on Halloween. His goal was to scare kids and collect their devilish treasures to
+                  finally find peace and fill his tummy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+  <div class="container-fluid footer">
+  <div class="container">
+    <section>
+      <a id="footer"></a>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="lazy-loading" data-src="img/logo.png" alt="ruerob logo">
+          <p class="font-weight-bold mt-2">&copy; ruerob 2021</p>
+        </div>
+        <div class="col-md-4">
+          <p>
+            <span class="font-weight-bold">ruerob</span><br>
+            <br>
+            Robert Rüdiger<br>
+            <br>
+            Buchenlandweg 32,<br>
+            64295 Darmstadt<br>
+            Germany - Hessen<br>
+            E-Mail: <a href="mailto: info@ruerob.com">info@ruerob.com</a><br>
+            <a href="https://www.xing.com/profile/Robert_Ruediger4/cv">Xing me on Xing</a><br>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <p>
+            <a href="impressum.html">Impressum</a><br>
+            <a href="data.html">Data protection</a><br>
+
+          <div class="links position-absolute">
+            <H5>
+              <a href="https://www.xing.com/profile/Robert_Ruediger4/cv"><svg class="fa"><use xlink:href="#fa-xing"></use></svg></a>
+              <a href="https://gamejolt.com/@ruerob"><img src="img/gamejolt_y.png" style="height:18px; width: 18px; display: inline;" alt="GameJolt Link"></a>
+              <a href="https://ruerob.itch.io/"><svg class="fa"><use xlink:href="#fa-itch-io"></use></svg></a>
+              <a href="mailto:support_ruerob@t-online.de"><svg class="fa"><use xlink:href="#fa-envelope"></use></svg></a>
+            </H5>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script src="js/plugins.js"></script>
+<script src="js/vendor/jQuery-3.5.1.slim.min.js"></script>
+<script src="js/vendor/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+  </body>
+  </html>
